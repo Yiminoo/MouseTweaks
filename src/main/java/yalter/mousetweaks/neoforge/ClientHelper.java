@@ -11,7 +11,7 @@ import yalter.mousetweaks.ConfigScreen;
  */
 public class ClientHelper implements IConfigScreenFactory {
     @Override
-    public Screen createScreen(Minecraft minecraft, Screen screen) {
-        return new ConfigScreen(screen);
+    public Screen createScreen(ModContainer container, Screen parent) {
+        return new ConfigScreen(parent);
     }
 }
